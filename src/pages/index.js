@@ -23,7 +23,7 @@ const DEFAULT_VIDEOS = [
     {
         id: '3',
         videoId: 'b1phcwAkeQo',
-        thumbnail: 'https://i9.ytimg.com/vi/072UXpATY6M/mqdefault.jpg?time=1568400053472&sqp=CIDF7-sF&rs=AOn4CLCtdF4ukLNA8AxOVkgQsJ7uL6oXnw',
+        thumbnail: 'https://i3.ytimg.com/vi/b1phcwAkeQo/mqdefault.jpg',
         caption: 'Summer Fun',
         description: 'Florida condominium vacation experience promotional video'
     },
@@ -39,8 +39,8 @@ const DEFAULT_VIDEOS = [
 class HomeIndex extends React.Component {
 
     render() {
-        const siteTitle = "Gatsby Starter - Strata"
-        const siteDescription = "Site description"
+        const siteTitle = "Blue Petal Media"
+        const siteDescription = "Blue Petal Media delivers excellence in videography and photography."
 
         return (
             <Layout>
@@ -50,17 +50,6 @@ class HomeIndex extends React.Component {
                 </Helmet>
 
                 <div id="main">
-
-                    <section id="one">
-                        <header className="major">
-                            <h2>Ipsum lorem dolor aliquam ante commodo<br />
-                            magna sed accumsan arcu neque.</h2>
-                        </header>
-                        <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
-                        <ul className="actions">
-                            <li><a href="#" className="button">Learn More</a></li>
-                        </ul>
-                    </section>
 
                     <section id="two">
                         <h2>Recent Work</h2>
@@ -81,20 +70,28 @@ class HomeIndex extends React.Component {
 
                     <section id="three">
                         <h2>Get In Touch</h2>
-                        <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
+                        <p></p>
                         <div className="row">
                             <div className="8u 12u$(small)">
                                 <a name="contact" />
-                                <form method="post" action="#">
+                                <form name="contact" method="post" data-netlify="true" netlify-honeypot="phone">
                                     <div className="row uniform 50%">
                                         <div className="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
                                         <div className="6u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
                                         <div className="12u"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+
+                                    </div>
+                                    <div className="row uniform 50%">
+                                        <div className="12u">
+                                            <ul className="actions">
+                                                <li><input type="submit" value="Send Message" /></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div style={{display: 'none'}}>
+                                        <input type="text" name="phone" />
                                     </div>
                                 </form>
-                                <ul className="actions">
-                                    <li><input type="submit" value="Send Message" /></li>
-                                </ul>
                             </div>
                             <div className="4u 12u$(small)">
                                 <ul className="labeled-icons">

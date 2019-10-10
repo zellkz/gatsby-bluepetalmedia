@@ -10,7 +10,7 @@ class Footer extends React.Component {
                         <li><a href="#contact" className="icon fa-envelope-o"><span className="label">Contact Me</span></a></li>
                     </ul>
                     <ul className="copyright">
-                        <li>&copy; My Company</li>
+                        <li>&copy; {new Date().getFullYear()}  Blue Petal Media</li>
                     </ul>
                 </div>
             </div>
