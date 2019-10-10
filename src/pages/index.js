@@ -5,27 +5,35 @@ import Layout from '../components/layout'
 // import Lightbox from 'react-images'
 import Gallery from '../components/Gallery'
 
-import thumb01 from '../assets/images/thumbs/01.jpg'
-import thumb02 from '../assets/images/thumbs/02.jpg'
-import thumb03 from '../assets/images/thumbs/03.jpg'
-import thumb04 from '../assets/images/thumbs/04.jpg'
-import thumb05 from '../assets/images/thumbs/05.jpg'
-import thumb06 from '../assets/images/thumbs/06.jpg'
-
-import full01 from '../assets/images/fulls/01.jpg'
-import full02 from '../assets/images/fulls/02.jpg'
-import full03 from '../assets/images/fulls/03.jpg'
-import full04 from '../assets/images/fulls/04.jpg'
-import full05 from '../assets/images/fulls/05.jpg'
-import full06 from '../assets/images/fulls/06.jpg'
-
-const DEFAULT_IMAGES = [
-    { id: '1', source: full01, thumbnail: thumb01, caption: 'Photo 1', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '2', source: full02, thumbnail: thumb02, caption: 'Photo 2', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '3', source: full03, thumbnail: thumb03, caption: 'Photo 3', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '4', source: full04, thumbnail: thumb04, caption: 'Photo 4', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '5', source: full05, thumbnail: thumb05, caption: 'Photo 5', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '6', source: full06, thumbnail: thumb06, caption: 'Photo 6', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'}
+const DEFAULT_VIDEOS = [
+    {
+        id: '1',
+        videoId: 'IjbGvuCMkXg',
+        thumbnail: 'https://i3.ytimg.com/vi/IjbGvuCMkXg/maxresdefault.jpg',
+        caption: 'Serenity in the Woods',
+        description: 'Property video for VRBO + Airbnb operator'
+    },
+    {
+        id: '2',
+        videoId: 'JCnUjwqSKR0',
+        thumbnail: 'https://i3.ytimg.com/vi/JCnUjwqSKR0/mqdefault.jpg',
+        caption: 'DJI Mavic - Get Out and Fly',
+        description: 'DJI Mavic drone commercial'
+    },
+    {
+        id: '3',
+        videoId: 'b1phcwAkeQo',
+        thumbnail: 'https://i9.ytimg.com/vi/072UXpATY6M/mqdefault.jpg?time=1568400053472&sqp=CIDF7-sF&rs=AOn4CLCtdF4ukLNA8AxOVkgQsJ7uL6oXnw',
+        caption: 'Summer Fun',
+        description: 'Florida condominium vacation experience promotional video'
+    },
+    {
+        id: '4',
+        videoId: 'zcd0ybjY5wI',
+        thumbnail: 'https://i3.ytimg.com/vi/zcd0ybjY5wI/maxresdefault.jpg',
+        caption: 'Pere Marquette State Park',
+        description: 'Aerial promotional video for state park'
+    },
 ];
 
 class HomeIndex extends React.Component {
@@ -57,15 +65,17 @@ class HomeIndex extends React.Component {
                     <section id="two">
                         <h2>Recent Work</h2>
 
-                        <Gallery images={DEFAULT_IMAGES.map(({ id, source, thumbnail, caption, description }) => ({
-                            source,
+                        <Gallery images={DEFAULT_VIDEOS.map(({ id, videoId, thumbnail, caption, description }) => ({
+                            videoId,
                             thumbnail,
                             caption,
                             description
                         }))} />
 
                         <ul className="actions">
-                            <li><a href="#" className="button">Full Portfolio</a></li>
+                            <li><a href="https://www.youtube.com/user/zellkz/videos" className="button">
+                                <span className="icon fa-youtube"></span> Full Portfolio
+                            </a></li>
                         </ul>
                     </section>
 
@@ -74,6 +84,7 @@ class HomeIndex extends React.Component {
                         <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
                         <div className="row">
                             <div className="8u 12u$(small)">
+                                <a name="contact" />
                                 <form method="post" action="#">
                                     <div className="row uniform 50%">
                                         <div className="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
@@ -89,17 +100,8 @@ class HomeIndex extends React.Component {
                                 <ul className="labeled-icons">
                                     <li>
                                         <h3 className="icon fa-home"><span className="label">Address</span></h3>
-                                        1234 Somewhere Rd.<br />
-                                        Nashville, TN 00000<br />
+                                        St. Louis, Missouri<br />
                                         United States
-                                    </li>
-                                    <li>
-                                        <h3 className="icon fa-mobile"><span className="label">Phone</span></h3>
-                                        000-000-0000
-                                    </li>
-                                    <li>
-                                        <h3 className="icon fa-envelope-o"><span className="label">Email</span></h3>
-                                        <a href="#">hello@untitled.tld</a>
                                     </li>
                                 </ul>
                             </div>
