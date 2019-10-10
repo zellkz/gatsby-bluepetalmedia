@@ -84,7 +84,7 @@ class HomeIndex extends React.Component {
                                     <div className="row uniform 50%">
                                         <div className="12u">
                                             <ul className="actions">
-                                                <li><input type="submit" value="Send Message" /></li>
+                                                <li><button type="submit">Send Message</button></li>
                                             </ul>
                                         </div>
                                     </div>
