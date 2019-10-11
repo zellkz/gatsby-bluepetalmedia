@@ -10,7 +10,7 @@ class Header extends React.Component {
                 <div className="inner">
                     <img src={avatar}  />
                     <h1><strong>Blue Petal Media</strong></h1>
-                     We create stunning works of film and imagery using top of the line equipment from cameras to drones.
+                     Superior Quality.<br />Fast Turnaround.<br />Happy Clients.
                 </div>
                 <Footer />
             </header>

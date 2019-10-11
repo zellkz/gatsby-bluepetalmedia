@@ -51,9 +51,33 @@ class HomeIndex extends React.Component {
 
                 <div id="main">
 
+                    <section id="one">
+                        <h2>Services</h2>
+                        <div className="row">
+                            <div className="4u 12u$(small)">
+                                <div className="text-center">
+                                    <span className="fa fa-film" style={{fontSize:'5em'}}></span>
+                                    <h3>Videography</h3>
+                                </div>
+                            </div>
+                            <div className="4u 12u$(small)">
+                                <div className="text-center">
+                                    <span className="fa fa-camera-retro" style={{fontSize:'5em'}}></span>
+                                    <h3>Photography</h3>
+                                </div>
+                            </div>
+                            <div className="4u 12u$(small)">
+                                <div className="text-center">
+                                    <span className="fas fa-fan" style={{fontSize:'5em'}}></span>
+                                    <h3>Aerial</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
                     <section id="two">
                         <h2>Recent Work</h2>
-
+                        <p>Look through our recent work to get an idea of what to expect when you go with Blue Petal Media. We pride ourselves in superior quality and fast turnaround on our clients' projects.</p>
                         <Gallery images={DEFAULT_VIDEOS.map(({ id, videoId, thumbnail, caption, description }) => ({
                             videoId,
                             thumbnail,
@@ -70,7 +94,7 @@ class HomeIndex extends React.Component {
 
                     <section id="three">
                         <h2>Get In Touch</h2>
-                        <p></p>
+                        <p>Have questions? Already have a project in mind? Let us know and we'll get back to you right away!</p>
                         <div className="row">
                             <div className="8u 12u$(small)">
                                 <a name="contact" />
@@ -97,7 +121,7 @@ class HomeIndex extends React.Component {
                             <div className="4u 12u$(small)">
                                 <ul className="labeled-icons">
                                     <li>
-                                        <h3 className="icon fa-home"><span className="label">Address</span></h3>
+                                        <h3 className="icon fa-building" title="Business Location"><span className="label">Address</span></h3>
                                         St. Louis, Missouri<br />
                                         United States
                                     </li>
