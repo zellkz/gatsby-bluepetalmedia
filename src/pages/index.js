@@ -52,7 +52,7 @@ const DEFAULT_VIDEOS = [
         id: '8',
         videoId: 'zoItGEoVzF8',
         thumbnail: 'https://img.youtube.com/vi/zoItGEoVzF8/maxresdefault.jpg',
-        caption: '',
+        caption: 'Winter River Valley Adventures',
         description: 'Promotional video for Overlook Farm cottage'
     },
     {
