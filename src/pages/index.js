@@ -15,10 +15,17 @@ const DEFAULT_VIDEOS = [
     },
     {
         id: '2',
-        videoId: 'JCnUjwqSKR0',
-        thumbnail: 'https://i3.ytimg.com/vi/JCnUjwqSKR0/mqdefault.jpg',
-        caption: 'DJI Mavic - Get Out and Fly',
-        description: 'DJI Mavic drone commercial'
+        videoId: '4QomaqvSUs0',
+        thumbnail: 'https://img.youtube.com/vi/4QomaqvSUs0/maxresdefault.jpg',
+        caption: 'Virgin Islands National Park',
+        description: 'Promotional video for the Virgin Islands National Park'
+    },
+    {
+        id: '5',
+        videoId: '_5v5_kxPAYw',
+        thumbnail: 'https://img.youtube.com/vi/_5v5_kxPAYw/maxresdefault.jpg',
+        caption: 'Autumn River Valley Adventures',
+        description: 'Autumn road trip along the Mississippi River Valley'
     },
     {
         id: '3',
@@ -33,6 +40,13 @@ const DEFAULT_VIDEOS = [
         thumbnail: 'https://i3.ytimg.com/vi/zcd0ybjY5wI/maxresdefault.jpg',
         caption: 'Pere Marquette State Park',
         description: 'Aerial promotional video for state park'
+    },
+    {
+        id: '6',
+        videoId: 'if9IWOa9O0o',
+        thumbnail: 'https://img.youtube.com/vi/if9IWOa9O0o/maxresdefault.jpg',
+        caption: 'American Pelican Migration',
+        description: 'Wildlife footage capturing the American Pelican southern migration'
     },
 ];
 
