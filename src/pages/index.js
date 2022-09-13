@@ -48,6 +48,20 @@ const DEFAULT_VIDEOS = [
         caption: 'American Pelican Migration',
         description: 'Wildlife footage capturing the American Pelican southern migration'
     },
+    {
+        id: '8',
+        videoId: 'zoItGEoVzF8',
+        thumbnail: 'https://img.youtube.com/vi/zoItGEoVzF8/maxresdefault.jpg',
+        caption: '',
+        description: 'Promotional video for Overlook Farm cottage'
+    },
+    {
+        id: '7',
+        videoId: 'mZVbcL7MxCI',
+        thumbnail: 'https://img.youtube.com/vi/mZVbcL7MxCI/mqdefault.jpg',
+        caption: 'Jerome and Slide Rock State Park',
+        description: 'Aerial footage of old mining town and desert canyon'
+    },
 ];
 
 class HomeIndex extends React.Component {
