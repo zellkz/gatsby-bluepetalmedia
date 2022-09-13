@@ -114,8 +114,8 @@ class HomeIndex extends React.Component {
                         }))} />
 
                         <ul className="actions">
-                            <li><a href="https://www.youtube.com/user/zellkz/videos" className="button">
-                                <span className="fab fa-youtube"></span> Full Portfolio
+                            <li><a href="https://www.youtube.com/user/zellkz/videos" className="button special">
+                                <span className="fab fa-youtube"></span> View Full Portfolio
                             </a></li>
                         </ul>
                     </section>
